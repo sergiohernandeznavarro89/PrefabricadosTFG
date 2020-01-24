@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api_CodeFirst</name>
+    </assembly>
+    <members>
+        <member name="M:Api_CodeFirst.Controller.AuthorsController.Get">
+            <summary>
+            GET all authors
+            </summary>
+            <returns>Lista de Autores</returns>
+            <remarks>Este es un método que devuelve toda la información de todos los Autores existentes</remarks>        
+        </member>
+        <member name="M:Api_CodeFirst.Controller.AuthorsController.GetByIdAsync(System.Int32)">
+            <summary>
+            GET author by id
+            </summary>
+            <param name="id"></param>
+            <returns>Autor con id indicado</returns>
+            <remarks>Este es un método que devuelve toda la información de un Autor determinado a través de su Id</remarks>
+        </member>
+        <member name="M:Api_CodeFirst.Controllers.BooksController.Get">
+            <summary>
+            GET all books
+            </summary>
+            <returns>Lista de Libros</returns>
+            <remarks>Este es un método que devuelve toda la información de todos los Libros existentes</remarks>        
+        </member>
+        <member name="M:Api_CodeFirst.Controllers.BooksController.GetByIdAsync(System.Int32)">
+            <summary>
+            GET book by id
+            </summary>
+            <param name="id"></param>
+            <returns>Autor con id indicado</returns>
+            <remarks>Este es un método que devuelve toda la información de un Autor determinado a través de su Id</remarks>
+        </member>
+    </members>
+</doc>
