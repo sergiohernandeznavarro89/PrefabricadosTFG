@@ -492,11 +492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\AuthServer.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\AuthServer.csproj",
       "projectName": "AuthServer",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\AuthServer.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\AuthServer.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
