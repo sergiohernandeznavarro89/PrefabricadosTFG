@@ -13,8 +13,12 @@ namespace Database.BD.Models
         public int RGB { get; set; }
         public string Descripcion { get; set; }
 
-
-        
-        public string Escandallo { get; set; } //relación con la tabla Escandasllo (1 ColoresTintado N Escandallos : 1 Escandallos 1 ColoresTintado)
+        //RELACIONES
+        //relación con la tabla Escandasllo (1 ColoresTintado N Escandallos : 1 Escandallos 1 ColoresTintado)
+        public ICollection<Escandallos> Escandallos { get; set; }
+        //------------------      
+        //relación con la tabla Pedido (1 ColoresPisos N Pedidos : 1 Pedidos 1 ColoresPisos)
+        public ICollection<Pedidos> Pedidos { get; set; }
+        //------------------
     }
 }

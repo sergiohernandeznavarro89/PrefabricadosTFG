@@ -15,8 +15,15 @@ namespace Database.BD.Models
         public string descripcion { get; set; } //Información sobre el tipo de pago 
 
 
+        //RELACION
+        //Relacion con tabla pedidos (1 forma de pago N pedidos : 1 Pedido 1 forma de pago)
+        public ICollection<Pedidos> Pedidos { get; set; }
+        //------------------
 
 
-        public string Cliente { get; set; } //relacion con tabla clientes (1 forma de pago N clientes : 1 cliente 1 forma de pago)
+
+
+        public string Cliente { get; set; } //relacion con tabla clientes (1 forma de pago N clientes : 1 cliente N forma de pago)        
+
     }
 }

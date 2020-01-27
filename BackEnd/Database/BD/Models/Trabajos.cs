@@ -13,8 +13,12 @@ namespace Database.BD.Models
         public string Descripcion { get; set; }               
         public int Precio { get; set; }
 
-
-
-        public string Escandallo { get; set; } //relación con la tabla Escandallos (1 Trabajo N Escandallos : 1 Escandallo 1 Trabajo)
+        //RELACIONES
+        //relación con la tabla Escandallos (1 Trabajo N Escandallos : 1 Escandallo 1 Trabajo)
+        public ICollection<Escandallos> Escandallos { get; set; }
+        //------------------        
+        //relación con la tabla Pedidos (1 Trabajo N Pedidos : 1 Pedido 1 Trabajo)
+        public ICollection<Pedidos> Pedidos { get; set; }
+        //------------------        
     }
 }

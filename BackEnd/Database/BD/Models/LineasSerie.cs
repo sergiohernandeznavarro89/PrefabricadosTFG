@@ -15,6 +15,6 @@ namespace Database.BD.Models
 
 
 
-        public string Serie { get; set; } //relación con la tabla Series (1 LineaSerie 1 Serie : 1 Serie N LineasSerie)
+        public string Serie { get; set; } //relación con la tabla Series (1 LineaSerie N Serie : 1 Serie N LineasSerie)
     }
 }

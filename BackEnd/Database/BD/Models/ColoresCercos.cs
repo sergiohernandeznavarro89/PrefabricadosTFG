@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Database.BD.Models
 {
@@ -11,9 +12,17 @@ namespace Database.BD.Models
         public string Descripcion { get; set; }
 
 
+        //RELACIONES
+        //relación con la tabla Escandasllo (1 ColorCerco N Escandallos : 1 Escandallos 1 ColorCerco)
+        public ICollection<Escandallos> Escandallos { get; set; }
+        //------------------
+        //relación con la tabla Pedido (1 ColoresPisos N Pedidos : 1 Pedidos 1 ColoresPisos)
+        public ICollection<Pedidos> Pedidos { get; set; }
+        //------------------
+
+
 
 
         public string MaterialCerco { get; set; } //relación con la tabla MaterialesCercos (1 ColorCerco N MaterialesCercos : 1 MaterialCerco N ColoresCerco)
-        public string Escandallo { get; set; } //relación con la tabla Escandasllo (1 ColorCerco N Escandallos : 1 Escandallos 1 ColorCerco)
     }
 }

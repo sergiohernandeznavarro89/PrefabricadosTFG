@@ -14,10 +14,17 @@ namespace Database.BD.Models
         public string Descripcion { get; set; }
 
 
+        //RELACIONES
+        //relación con la tabla Escandallo (1 AlturasPisos N Escandallos : 1 Escandallos 1 AlturasPisos)
+        public ICollection<Escandallos> Escandallos { get; set; }
+        //------------------
+        //relación con la tabla Pedidos (1 AlturasPisos N Pedidos : 1 Pedido 1 AlturasPisos)
+        public ICollection<Pedidos> Pedidos { get; set; }
+        //------------------
+
 
 
 
         public string MaterialPiso { get; set; } //relación con la tabla MaterialesPisos (1 AlturaPisos N MaterialesPisos : 1 MaterialPiso N AlturasPisos)        
-        public string Escandallo { get; set; } //relación con la tabla Escandallo (1 AlturasPisos N Escandallos : 1 Escandallos 1 AlturasPisos)
     }
 }
