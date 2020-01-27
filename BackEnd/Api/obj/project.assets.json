@@ -7592,11 +7592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\Api.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -7617,11 +7617,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj"
+            "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj"
             },
-            "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj"
+            "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj"
             }
           }
         }
