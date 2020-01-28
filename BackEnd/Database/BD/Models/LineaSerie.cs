@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Database.BD.Models
 {
-    public class LineasSerie
+    public class LineaSerie
     {
         [Key]
         public int IdLineaSerie { get; set; }
@@ -13,8 +13,10 @@ namespace Database.BD.Models
         public int NumeroDesde { get; set; }                
         public int NumeroHasta { get; set; }
 
-
-
-        public string Serie { get; set; } //relación con la tabla Series (1 LineaSerie N Serie : 1 Serie N LineasSerie)
+        #region RELACIONES
+        public ICollection<LineaSerieSerie> LineasSerieSeries { get; set; }
+        public ICollection<LineaSeriePedido> LineasSeriePedidos { get; set; }
+        public ICollection<LineaSerieEscandallo> LineasSerieEscandallos { get; set; }
+        #endregion
     }
 }

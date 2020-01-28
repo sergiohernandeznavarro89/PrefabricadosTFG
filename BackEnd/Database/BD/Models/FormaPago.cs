@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Database.BD.Models
 {
-    public class FormasPago
+    public class FormaPago
     {
         [Key]
         public int IdFormaPago { get; set; }
@@ -15,15 +15,9 @@ namespace Database.BD.Models
         public string descripcion { get; set; } //Información sobre el tipo de pago 
 
 
-        //RELACION
-        //Relacion con tabla pedidos (1 forma de pago N pedidos : 1 Pedido 1 forma de pago)
-        public ICollection<Pedidos> Pedidos { get; set; }
-        //------------------
-
-
-
-
-        public string Cliente { get; set; } //relacion con tabla clientes (1 forma de pago N clientes : 1 cliente N forma de pago)        
-
+        #region RELACIONES
+        public ICollection<Pedido> Pedidos { get; set; }
+        public ICollection<ClienteFormaPago> ClientesFormasPago { get; set; }
+        #endregion
     }
 }
