@@ -13,8 +13,7 @@ namespace Database.BD.Models
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaFirma { get; set; }
 
-        #region RELACIONES
-        [ForeignKey("IdPedido")]
+        #region RELACIONES        
         public int IdPedido { get; set; }
         public Pedido Pedido { get; set; }
         //-------------------------------

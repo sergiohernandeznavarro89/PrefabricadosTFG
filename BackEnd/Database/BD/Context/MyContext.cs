@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Database.BD.Context
 {
-    class MyContext : DbContext
+    public class MyContext : DbContext
     {
         public MyContext(DbContextOptions<MyContext> data) : base(data) { }
 
@@ -89,6 +89,20 @@ namespace Database.BD.Context
 
             modelBuilder.Entity<RemesaCliente>()
                 .HasKey(c => new { c.RemesaId, c.ClienteId });
+
+            //PEDIDO - ALBARAN
+            modelBuilder.Entity<Pedido>()
+                .HasOne(p => p.Albaran).WithOne(a => a.Pedido)
+                .HasForeignKey<Albaran>(a => a.IdPedido);
+            modelBuilder.Entity<Pedido>().ToTable("Pedidos");
+            modelBuilder.Entity<Albaran>().ToTable("Albaranes");
+
+            //PEDIDO - FACTURA
+            modelBuilder.Entity<Pedido>()
+                .HasOne(p => p.Factura).WithOne(f => f.Pedido)
+                .HasForeignKey<Factura>(f => f.IdPedido);
+            modelBuilder.Entity<Pedido>().ToTable("Pedidos");
+            modelBuilder.Entity<Factura>().ToTable("Facturas");
         }        
         #endregion
     }

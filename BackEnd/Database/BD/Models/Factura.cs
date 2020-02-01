@@ -14,7 +14,6 @@ namespace Database.BD.Models
         public DateTime FechaFirma { get; set; }
 
         #region RELACIONES
-        [ForeignKey("IdPedido")]
         public int IdPedido { get; set; }
         public Pedido Pedido { get; set; }
         //-------------------------------

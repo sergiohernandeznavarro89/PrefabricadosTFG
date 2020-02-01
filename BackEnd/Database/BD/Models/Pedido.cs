@@ -75,13 +75,9 @@ namespace Database.BD.Models
         [ForeignKey("IdSerie")]
         public int IdSerie { get; set; }
         public Serie Serie { get; set; }
-        //-------------    
-        [ForeignKey("IdAlbaran")]
-        public int IdAlbaran { get; set; }
+        //-------------                    
         public Albaran Albaran { get; set; }
         //-------------
-        [ForeignKey("IdFactura")]
-        public int IdFactura { get; set; }
         public Factura Factura { get; set; }
         //-------------
 
