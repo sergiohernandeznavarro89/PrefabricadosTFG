@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\Api.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\Api.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\Api.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Api\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj"
+              "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj"
               },
-              "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj"
+              "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj"
               }
             }
           }
@@ -59,6 +59,12 @@
               "version": "[3.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.1, )"
             },
@@ -101,14 +107,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -148,6 +154,12 @@
               "target": "Package",
               "version": "[3.1.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -169,14 +181,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Service\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -197,8 +209,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj"
+              "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj"
               }
             }
           }
@@ -213,6 +225,12 @@
         "netstandard2.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.1, )"
             },

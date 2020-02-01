@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\Database.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\Database\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -48,6 +48,12 @@
               "version": "[3.1.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.1, )"
             },

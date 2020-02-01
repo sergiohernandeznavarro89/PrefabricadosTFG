@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\AuthServer.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\AuthServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\AuthServer.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\AuthServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\AuthServer.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\AuthServer.csproj",
         "projectName": "AuthServer",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\AuthServer.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\AuthServer.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos NET.Core3\\TFG_Prefabricados\\AuthServer\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\TFG_Prefabricados\\TFG_Prefabricados\\PrefabricadosTFG\\BackEnd\\AuthServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -46,6 +46,16 @@
             "IdentityServer4": {
               "target": "Package",
               "version": "[4.0.0-preview.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
             }
           },
           "imports": [

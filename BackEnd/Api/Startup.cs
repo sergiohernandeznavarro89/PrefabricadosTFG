@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Api.Assets;
 using AutoMapper;
+using Database.BD.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,13 +34,18 @@ namespace Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = Configuration.GetConnectionString("Default");
+            //var connection = Configuration.GetConnectionString("DefaultConnection");
 
             //Registramos el contexto.
-            services.AddDbContext<DbContext>(options =>
+            //services.AddDbContext<MyContext>(options =>
+            //{
+            //    options.UseSqlServer(connection);
+            //});
+            services.AddDbContext<MyContext >(options =>
             {
-                options.UseSqlServer(connection);
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
             //Registramos AutoMapper
             services.AddAutoMapper(typeof(MappingProfile).GetType().Assembly);
 
