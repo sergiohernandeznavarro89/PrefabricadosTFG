@@ -33,6 +33,8 @@ namespace Database.BD.Models
         public ICollection<TroquelTapa> TroquelesTapaPropios { get; set; }
         public ICollection<Escandallo> Escandallos { get; set; }
         public ICollection<ClienteFormaPago> ClientesFormasPago { get; set; }
+        public ICollection<RemesaCliente> RemesasClientes { get; set; }
+        public ICollection<Cobro> Cobros { get; set; }
         #endregion
     }
 }

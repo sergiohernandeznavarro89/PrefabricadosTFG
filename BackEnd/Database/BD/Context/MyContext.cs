@@ -10,7 +10,6 @@ namespace Database.BD.Context
     {
         public MyContext(DbContextOptions<MyContext> data) : base(data) { }
 
-
         public DbSet<AlturaPiso> AlturasPisos { get; set; }
         public DbSet<AlturaPisoMaterialPiso> AlturasPisosMaterialesPisos { get; set; }
         public DbSet<AlturaTapa> AlturasTapas { get; set; }
@@ -42,6 +41,10 @@ namespace Database.BD.Context
         public DbSet<Trabajo> Trabajos { get; set; }
         public DbSet<TroquelPiso> TroquelesPisos { get; set; }
         public DbSet<TroquelTapa> TroquelesTapas { get; set; }              
+        public DbSet<Cobro> Cobros { get; set; }
+        public DbSet<Remesa> Remesas { get; set; }
+        public DbSet<Albaran> Albaranes { get; set; }
+        public DbSet<Factura> Facturas { get; set; }        
 
 
         //relaciones muchos a muchos
@@ -83,6 +86,9 @@ namespace Database.BD.Context
 
             modelBuilder.Entity<LineaSerieSerie>()
                 .HasKey(c => new { c.LineaSerieId, c.SerieId });
+
+            modelBuilder.Entity<RemesaCliente>()
+                .HasKey(c => new { c.RemesaId, c.ClienteId });
         }        
         #endregion
     }
