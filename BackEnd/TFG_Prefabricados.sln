@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{3354B0F0-7CC6-4CD0-9DF3-32518494A28F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{3354B0F0-7CC6-4CD0-9DF3-32518494A28F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E1A3FA49-3A83-4C28-9DF3-4836AD658B99} = {E1A3FA49-3A83-4C28-9DF3-4836AD658B99}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{E1A3FA49-3A83-4C28-9DF3-4836AD658B99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{E1A3FA49-3A83-4C28-9DF3-4836AD658B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{25810038-8028-42B0-B727-B7AF62B68623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{25810038-8028-42B0-B727-B7AF62B68623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServer", "AuthServer\AuthServer.csproj", "{8A27ACDD-7845-4A1D-88C2-20FB4B932728}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthServer", "AuthServer\AuthServer.csproj", "{8A27ACDD-7845-4A1D-88C2-20FB4B932728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{EAFB1BEA-C3ED-437B-BD4B-2AFACCD300DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{8A27ACDD-7845-4A1D-88C2-20FB4B932728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A27ACDD-7845-4A1D-88C2-20FB4B932728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A27ACDD-7845-4A1D-88C2-20FB4B932728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFB1BEA-C3ED-437B-BD4B-2AFACCD300DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFB1BEA-C3ED-437B-BD4B-2AFACCD300DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFB1BEA-C3ED-437B-BD4B-2AFACCD300DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFB1BEA-C3ED-437B-BD4B-2AFACCD300DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
