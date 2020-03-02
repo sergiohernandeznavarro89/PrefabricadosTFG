@@ -14,6 +14,7 @@ namespace Database.BD.Context
         public DbSet<AlturaPisoMaterialPiso> AlturasPisosMaterialesPisos { get; set; }
         public DbSet<AlturaTapa> AlturasTapas { get; set; }
         public DbSet<AlturaTapaMaterialTapa> AlturasTapasMaterialesTapas { get; set; }
+        public DbSet<Cobro> Cobros { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<ClienteFormaPago> ClientesFormasPago { get; set; }
         public DbSet<ColorCerco> ColoresCercos { get; set; }
@@ -40,23 +41,23 @@ namespace Database.BD.Context
         public DbSet<Serie> Series { get; set; }
         public DbSet<Trabajo> Trabajos { get; set; }
         public DbSet<TroquelPiso> TroquelesPisos { get; set; }
-        public DbSet<TroquelTapa> TroquelesTapas { get; set; }              
-        public DbSet<Cobro> Cobros { get; set; }
+        public DbSet<TroquelTapa> TroquelesTapas { get; set; }
         public DbSet<Remesa> Remesas { get; set; }
         public DbSet<Albaran> Albaranes { get; set; }
-        public DbSet<Factura> Facturas { get; set; }        
+        public DbSet<Factura> Facturas { get; set; }
 
 
         //relaciones muchos a muchos
         #region relaciones muchos a muchos
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {            
+        {
+            //relaciones muchos a muchos
             modelBuilder.Entity<AlturaPisoMaterialPiso>()
                 .HasKey(c => new { c.AlturaPisoId, c.MaterialPisoId });
 
             modelBuilder.Entity<AlturaTapaMaterialTapa>()
                 .HasKey(c => new { c.AlturaTapaId, c.MaterialTapaId });
-            
+
             modelBuilder.Entity<ClienteFormaPago>()
                 .HasKey(c => new { c.ClienteId, c.FormaPagoId });
 
@@ -89,7 +90,9 @@ namespace Database.BD.Context
 
             modelBuilder.Entity<RemesaCliente>()
                 .HasKey(c => new { c.RemesaId, c.ClienteId });
+            //---------------------
 
+            //relaciones uno a uno
             //PEDIDO - ALBARAN
             modelBuilder.Entity<Pedido>()
                 .HasOne(p => p.Albaran).WithOne(a => a.Pedido)
@@ -103,7 +106,8 @@ namespace Database.BD.Context
                 .HasForeignKey<Factura>(f => f.IdPedido);
             modelBuilder.Entity<Pedido>().ToTable("Pedidos");
             modelBuilder.Entity<Factura>().ToTable("Facturas");
-        }        
+            //---------------
+        }
         #endregion
     }
 }

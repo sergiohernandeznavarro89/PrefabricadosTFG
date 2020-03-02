@@ -788,6 +788,9 @@ namespace Database.Migrations
                     b.Property<string>("AlturaTapaIdAlturaTapa")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int?>("ClienteIdCliente")
+                        .HasColumnType("int");
+
                     b.Property<string>("CodigoPedidoCliente")
                         .HasColumnType("nvarchar(max)");
 
@@ -819,6 +822,9 @@ namespace Database.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("IdAlturaTapa")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdCliente")
                         .HasColumnType("int");
 
                     b.Property<int>("IdColorCerco")
@@ -889,6 +895,8 @@ namespace Database.Migrations
                     b.HasIndex("AlturaPisoIdAlturaPiso");
 
                     b.HasIndex("AlturaTapaIdAlturaTapa");
+
+                    b.HasIndex("ClienteIdCliente");
 
                     b.HasIndex("ColorCercoIdColorCerco");
 
@@ -1327,6 +1335,10 @@ namespace Database.Migrations
                     b.HasOne("Database.BD.Models.AlturaTapa", "AlturaTapa")
                         .WithMany("Pedidos")
                         .HasForeignKey("AlturaTapaIdAlturaTapa");
+
+                    b.HasOne("Database.BD.Models.Cliente", "Cliente")
+                        .WithMany("Pedidos")
+                        .HasForeignKey("ClienteIdCliente");
 
                     b.HasOne("Database.BD.Models.ColorCerco", "ColorCerco")
                         .WithMany("Pedidos")

@@ -17,6 +17,10 @@ namespace Database.BD.Models
 
 
         #region RELACIONES
+        [ForeignKey("IdCliente")]
+        public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
+        //--------------------
         [ForeignKey("IdFormaPago")]
         public int IdFormaPago { get; set; }
         public FormaPago FormaPago { get; set; }
