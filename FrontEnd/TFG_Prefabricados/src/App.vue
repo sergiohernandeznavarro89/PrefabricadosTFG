@@ -79,8 +79,8 @@
         </v-container>
       </v-content>
       <!-- =================== -->
-
-<!-- Alert cambiar tema -->
+    </div>    
+    <!-- Alert cambiar tema -->
       <v-row justify="center">        
         <v-dialog v-model="showThemeDialog" max-width="290" >
           <v-card>
@@ -120,14 +120,6 @@
         </v-dialog>
       </v-row>
 <!-- =============== -->
-
-
-
-
-
-
-
-    </div>
   </v-app>
 </template>
 

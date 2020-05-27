@@ -1,5 +1,4 @@
 <template>
-  <div>      
     <div class=" row ml-5 mr-5 mb-7">          
       <v-card class="col-sm-12" elevation="5">    
         <v-card-title class="headline">About</v-card-title>   
@@ -11,7 +10,6 @@
         </div>                
       </v-card>
     </div>                 
-  </div>
 </template> 
 
 <script>
