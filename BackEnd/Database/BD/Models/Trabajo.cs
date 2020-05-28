@@ -14,8 +14,10 @@ namespace Database.BD.Models
         public int Precio { get; set; }
 
         #region RELACIONES        
-        public ICollection<Escandallo> Escandallos { get; set; }        
-        public ICollection<Pedido> Pedidos { get; set; }
+        public ICollection<Escandallo> Escandallos { get; set; }
+        public ICollection<TareaRealizada> TareasRealizadas { get; set; }
+        public ICollection<TrabajoPedido> TrabajosPedidos { get; set; }
+
         #endregion
     }
 }

@@ -19,11 +19,7 @@ namespace Database.BD.Models
         #region RELACIONES
         [ForeignKey("IdFormaPago")]
         public int IdFormaPago { get; set; }
-        public FormaPago FormaPago { get; set; }
-        //-------------
-        [ForeignKey("IdTrabajo")]
-        public int IdTrabajo { get; set; }
-        public Trabajo Trabajo { get; set; }
+        public FormaPago FormaPago { get; set; }        
         //-------------
         [ForeignKey("IdMaterialPiso")]
         public int IdMaterialPiso { get; set; }
@@ -83,6 +79,8 @@ namespace Database.BD.Models
 
         public ICollection<LineaSeriePedido> LineasSeriePedidos { get; set; }
         public ICollection<EscandalloPedido> EscandallosPedidos { get; set; }
+        public ICollection<TareaRealizada> TareasRealizadas { get; set; }
+        public ICollection<TrabajoPedido> TrabajosPedidos { get; set; }
         public ICollection<Cobro> Cobros { get; set; }
         #endregion                
     }

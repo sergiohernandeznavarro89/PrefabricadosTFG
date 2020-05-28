@@ -4,14 +4,16 @@ using Database.BD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Database.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20200528095617_AddNominas")]
+    partial class AddNominas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -417,11 +419,17 @@ namespace Database.Migrations
                     b.Property<int>("IBAN")
                         .HasColumnType("int");
 
+                    b.Property<int>("IdPedido")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nif")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PedidoIdPedido")
+                        .HasColumnType("int");
 
                     b.Property<string>("Poblacion")
                         .HasColumnType("nvarchar(max)");
@@ -433,6 +441,8 @@ namespace Database.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("IdEmpleado");
+
+                    b.HasIndex("PedidoIdPedido");
 
                     b.ToTable("Empleados");
                 });
@@ -1287,6 +1297,13 @@ namespace Database.Migrations
                         .HasForeignKey("MaterialTapaIdMaterialTapa")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Database.BD.Models.Empleado", b =>
+                {
+                    b.HasOne("Database.BD.Models.Pedido", "Pedido")
+                        .WithMany()
+                        .HasForeignKey("PedidoIdPedido");
                 });
 
             modelBuilder.Entity("Database.BD.Models.Escandallo", b =>
