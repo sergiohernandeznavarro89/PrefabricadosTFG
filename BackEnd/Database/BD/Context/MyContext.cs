@@ -45,6 +45,10 @@ namespace Database.BD.Context
         public DbSet<Remesa> Remesas { get; set; }
         public DbSet<Albaran> Albaranes { get; set; }
         public DbSet<Factura> Facturas { get; set; }        
+        public DbSet<TrabajoPedido> TrabajosPedidos { get; set; }        
+        public DbSet<Nomina> Nominas { get; set; }        
+        public DbSet<TareaRealizada> TareasRealizadas { get; set; }        
+        public DbSet<Empleado> Empleados { get; set; }        
 
 
         //relaciones muchos a muchos
