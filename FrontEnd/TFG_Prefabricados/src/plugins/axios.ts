@@ -17,7 +17,8 @@ const service = axios.create({
 
   // Add a 401 response interceptor
   /* service.interceptors.response.use(
-    (response) => response,
+    (response) => re
+    sponse,
     (error) => {
     // if (error.response.status === 401) store.dispatch('logout');
       throw error;

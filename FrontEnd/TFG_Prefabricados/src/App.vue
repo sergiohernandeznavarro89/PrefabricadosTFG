@@ -13,7 +13,7 @@
             </div>
             <div class="row">
               <div class="col-sm-6 offset-3">                
-                <v-text-field v-model="user.password" label="Contraseña"></v-text-field>
+                <v-text-field type="password" v-model="user.password" label="Contraseña"></v-text-field>
               </div>
             </div>
             <div class="row">
@@ -28,44 +28,57 @@
 
     <div class="row" v-else>      
       <!-- menú de la izquierda -->
-      <v-navigation-drawer :clipped="clipped" v-model="drawer" enable-resize-watcher app>
+      <v-navigation-drawer :clipped="clipped" v-model="drawer" enable-resize-watcher app>        
+        <!-- parte superior linea -->
         <v-list>
+          <!-- avatar -->
           <v-list-item @click.stop="drawer = !drawer">
             <v-list-item-avatar>
               <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
             </v-list-item-avatar>
             <v-list-item-content>
-              <v-list-item-title>John Leider</v-list-item-title>
+              <v-list-item-title>Sergio Hernández Navarro</v-list-item-title>
             </v-list-item-content>            
             <v-btn icon>
               <v-icon>mdi-chevron-left</v-icon>
             </v-btn>
           </v-list-item>
+          <!-- selector tema -->
           <v-list-item>
             <v-switch color="primary" label="Tema oscuro" v-model="darkTheme"></v-switch>
           </v-list-item>
         </v-list>
         <v-divider></v-divider>
-        <v-list dense>
-          <v-list-item class="menuLateral" v-for="item in items" :key="item.title" link v-on:click="menuClick(item.path)">
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
 
-            <v-list-item-content>
+        <!-- menú grupos -->
+        <v-list dense>          
+          <v-list-group no-action :value="false" v-for="item in itemsGroup" :key="item.title">
+            <!-- agrupación -->
+            <template v-slot:activator>                              
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-icon>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>   
+            </template>
+
+            <!-- contenido agrupacion -->
+            <v-list-item value link class="menuLateral" v-for="subItem in item.subItems" :key="subItem.title" v-on:click="menuClick(subItem.path)">                                                                      
+              <v-list-item-title>{{ subItem.title }}</v-list-item-title>
+            </v-list-item>               
+          </v-list-group>
+        </v-list>                                                  
+
+        <!-- botón logout -->
         <template v-slot:append>
-        <div class="pa-2">
-          <div class="col-sm-12 text-center">
-            <v-btn block color="error" outlined v-on:click="showLogOutDialog = true">
-              <v-icon left>mdi-exit-to-app</v-icon> Logout
-            </v-btn>
+          <div class="pa-2">
+            <div class="col-sm-12 text-center">
+              <v-btn block color="error" outlined v-on:click="showLogOutDialog = true">
+                <v-icon left>mdi-exit-to-app</v-icon> Logout
+              </v-btn>
+            </div>
           </div>
-        </div>
-      </template>     
+        </template>   
+
       </v-navigation-drawer>
 
       <!-- ======================== -->
@@ -140,11 +153,51 @@ export default{
       pulsadoBotonCancelarCambioTema: false,
       drawer: true,
       clipped: false,
-      items: [
-        { title: 'Home', icon: 'mdi-home-city', path: '/' },
-        { title: 'About', icon: 'mdi-account', path: '/about' },
-        { title: 'Fotos', icon: 'mdi-account-group-outline', path: '/fotos' },
-      ],
+      itemsGroup: [
+        { 
+          title: 'Administracion', 
+          icon: 'mdi-folder',           
+          subItems: [            
+            { title: 'Pisos', path: '/fotos' },
+            { title: 'Tapas', path: '/about' },   
+            { title: 'Cerco', path: '/about' },  
+            { title: 'Tintas', path: '/about' },    
+            { title: 'Troqueles', path: '/' },
+            { title: 'Hormas', path: '/about' },   
+            { title: 'Series', path: '/about' },                         
+            { title: 'Clientes', path: '/about' },
+            { title: 'Formas de pago', path: '/about' },
+          ]
+        },
+        { 
+          title: 'Pedidos', 
+          icon: 'mdi-format-list-bulleted',           
+          subItems: [            
+            { title: 'Pedidos', path: '/fotos' },
+            { title: 'Escandallos', path: '/about' },   
+            { title: 'Albaranes', path: '/' },
+            { title: 'Facturas', path: '/about' },              
+          ]
+        },
+        { 
+          title: 'Cobros', 
+          icon: 'mdi-credit-card',           
+          subItems: [            
+            { title: 'Cobros', path: '/fotos' },
+            { title: 'Remesas bancarias', path: '/about' },               
+          ]
+        },        
+        { 
+          title: 'Nominas', 
+          icon: 'mdi-file-document',           
+          subItems: [            
+            { title: 'Nominas', path: '/nominas' },
+            { title: 'Empleados', path: '/empleados' },   
+            { title: 'Tareas', path: '/tareas' },              
+            { title: 'Trabajos realizados', path: '/trabajosRealizados' },   
+          ]
+        }       
+      ],              
     }
     //
   },
