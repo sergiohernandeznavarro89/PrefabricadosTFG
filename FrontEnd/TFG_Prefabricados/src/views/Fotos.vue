@@ -14,13 +14,13 @@
           </div>
           <div class="col-sm-4 text-center">
             <v-text-field v-model="number" label="Number"></v-text-field>
-              <v-btn depressed small color="primary" v-on:click="foto1Click">Foto 1</v-btn>
+            <v-btn depressed small color="primary" v-on:click="foto1Click">Foto 1</v-btn>
           </div>
           <div class="col-sm-4 text-center">
               <v-btn rounded  small color="primary" v-on:click="foto2Click">Foto 2</v-btn>
           </div>
           <div class="col-sm-4 text-center">
-            <v-btn class="ma-2" tile outlined color="primary">
+            <v-btn class="ma-2" tile outlined color="primary" v-on:click="foto3Click">
               <v-icon left>mdi-camera</v-icon> Foto 3
             </v-btn>
           </div>            
@@ -42,19 +42,12 @@
 
 <script>
   import Foto from '@/components/Foto.vue';
-import store from '../store';
 
-  export default {
+  export default {    
     name: 'Fotos',      
     data() {
       return { 
-        token: 'eyJhbGciOiJSUzI1NiIsImtpZCI6IkJnTm95Qi1aSEhwcDJBNkhJMVF4emciLCJ0eXAiOiJhdCtqd3QifQ.eyJuYmYiOjE1ODA3NTQwNzYsImV4cCI6MTU4MDc1NzY3NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMDkiLCJhdWQiOiJBcGkiLCJjbGllbnRfaWQiOiJQcmVmYWJyaWNhZG9zIiwic2NvcGUiOlsiQXBpIl19.IpFGfbZlruibLPagEe3kXfMz6LjJb4fnjKrdUBMOOKQsInEkLggZUoAxRqrmxl8xeWUponHFvXODFxgy65QH8FRvFpo9dM3Dqzw8KOIXn1lTVkcQg8W2WyGTYnKH_LZSh3Il1C6xte_bcJOXOb1N3nZdwk9FGgfIAqAcdxfuC2RSv5VCsLDT1kJelzpVsmLEjrJz_E872_m_d1RFXKePoqOOk-_rmFy_BAKwjwXxss0oDLqU9cAANDyxwFciEUc53nxcYWXGv36ZwVuxnt9sfYElFyc4VNRQ2Sns2GKdbRw84ihAAmQ0boNllCnmlErLdiDRyPKljNDwML_MTQSf7w',
-        config: {
-          headers: {            
-            Authorization: `Bearer ${this.token}`,
-          }
-        },
-        urlApi: store.state.API_URL,
+        urlApi: this.$store.state.API_URL,
         number: 9999, 
         textoAlerta: "este es un texto de prueba para ver como se va a quedar esta mierda",
       };
@@ -72,19 +65,10 @@ import store from '../store';
         }          
       },
     },
-    created: function(){
-      this.loadApiData();
-    },   
-    methods: {
-      loadApiData: function(){
-        debugger;
-        this.axios.get(`${store.state.API_URL}/api/Prueba`, this.config)
-        .then(response =>{
-          debugger;
-        });
-      },
-
-      foto1Click: function(){
+    created: function(){ },   
+    
+    methods: {      
+      foto1Click: function(){          
         this.tituloPagina = "asdfasd";
         this.$router.push('/fotos/1')
       },
@@ -97,5 +81,6 @@ import store from '../store';
         this.$router.push('/fotos/3')
       },
     },
+
   };
 </script>

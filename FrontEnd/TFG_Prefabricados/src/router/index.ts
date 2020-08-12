@@ -10,11 +10,28 @@ const routes = [
     name: 'home',
     component: Home,
   },
+  // NOMINAS
   {
-    path: '/about',
-    name: 'about',    
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    path: '/nominas',
+    name: 'nominas',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Nominas/Nominas.vue'),
   },
+  {
+    path: '/empleados',
+    name: 'empleados',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Nominas/Empleados.vue'),
+  },
+  {
+    path: '/tareas',
+    name: 'tareas',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Nominas/Tareas.vue'),
+  },
+  {
+    path: '/trabajosRealizados',
+    name: 'trabajosRealizados',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Nominas/TrabajosRealizados.vue'),
+  },  
+  // ---------
   {
     path: '/fotos/:id?',
     name: 'fotos',
