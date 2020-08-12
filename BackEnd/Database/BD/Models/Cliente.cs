@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Database.BD.Models
 {
@@ -26,8 +25,6 @@ namespace Database.BD.Models
         public int Subida { get; set; } //Porcentaje de subida de precios que se aplica al cliente
         public int Descuento { get; set; } //Porcentaje de descuento de precios que se aplica al cliente
 
-
-
         #region RELACIONES
         public ICollection<Horma> Hormas { get; set; }        
         public ICollection<TroquelTapa> TroquelesTapaPropios { get; set; }
@@ -35,6 +32,7 @@ namespace Database.BD.Models
         public ICollection<ClienteFormaPago> ClientesFormasPago { get; set; }
         public ICollection<RemesaCliente> RemesasClientes { get; set; }
         public ICollection<Cobro> Cobros { get; set; }
+        public ICollection<Pedido> Pedidos { get; set; }
         #endregion
     }
 }

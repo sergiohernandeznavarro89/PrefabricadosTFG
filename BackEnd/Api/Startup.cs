@@ -19,6 +19,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.OpenApi.Models;
+using Service.Helpers;
 
 namespace Api
 {
@@ -47,7 +48,16 @@ namespace Api
             });
 
             //Registramos AutoMapper
-            services.AddAutoMapper(typeof(MappingProfile).GetType().Assembly);
+
+            // Auto Mapper Configurations
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutoMapperProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+            //services.AddAutoMapper(typeof(Startup));
 
             IdentityModelEventSource.ShowPII = true;
 
