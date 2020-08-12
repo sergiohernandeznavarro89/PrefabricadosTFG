@@ -22,6 +22,7 @@ namespace Database.BD.Models
         [ForeignKey("IdCliente")]
         public int IdCliente { get; set; }
         public Cliente Cliente { get; set; }
+        //-------------
         [ForeignKey("IdRemesa")]
         public int IdRemesa { get; set; }
         public Remesa Remesa { get; set; }
