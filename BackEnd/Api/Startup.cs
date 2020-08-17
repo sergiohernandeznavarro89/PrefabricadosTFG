@@ -42,10 +42,10 @@ namespace Api
             //{
             //    options.UseSqlServer(connection);
             //});
-            services.AddDbContext<MyContext >(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            });
+            services.AddDbContext<MyContext>(options =>
+           {
+               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+           });
 
             //Registramos AutoMapper
 
@@ -63,30 +63,24 @@ namespace Api
 
             services.AddControllers();
 
-            //Configuracion de IdentityServer
-
-            services.AddAuthentication("Bearer")
-                .AddJwtBearer("Bearer", options =>
-                {
-                    options.Authority = "https://localhost:44309";
-                    options.RequireHttpsMetadata = false;
-                    options.Audience = "Api";
-                });
-
             //Registramos Swagger
             var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, "Api_Prefabricados.xml");
             services.AddSwaggerGen(config =>
             {
                 config.SwaggerDoc("v1", new OpenApiInfo { Title = "Prefabricados", Version = "v1" });
                 config.IncludeXmlComments(filePath);
-                //config.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                //{
-                //    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
-                //    Name = "Authorization",
-                //    In = ParameterLocation.Header,
-                //    Type = SecuritySchemeType.ApiKey
-                //});
             });
+
+            //Configuracion de IdentityServer
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "https://localhost:5001";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiName = "apiTFG";                    
+                });
+
+
 
             //Añade los servicios y los repositorios empleando Scrutor, que nos permite agregar todas las que siguen un patron
             services.Scan(scan => scan
@@ -129,7 +123,7 @@ namespace Api
 
             app.UseRouting();
 
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

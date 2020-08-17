@@ -1,68 +1,24 @@
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.exe
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.csprojAssemblyReference.cache
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\staticwebassets\AuthServer.StaticWebAssets.Manifest.cache
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\staticwebassets\AuthServer.StaticWebAssets.xml
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.AssemblyInfoInputs.cache
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.AssemblyInfo.cs
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorTargetAssemblyInfo.cache
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\IdentityModel.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\IdentityServer4.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.csproj.CopyComplete
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.deps.json
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.runtimeconfig.json
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.runtimeconfig.dev.json
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.pdb
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.dll
-C:\Users\Usuario\Desktop\Ejemplos NET.Core3\TFG_Prefabricados\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.pdb
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.exe
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.deps.json
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.runtimeconfig.json
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.runtimeconfig.dev.json
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.pdb
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\IdentityModel.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\IdentityServer4.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\staticwebassets\AuthServer.StaticWebAssets.Manifest.cache
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\staticwebassets\AuthServer.StaticWebAssets.xml
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.AssemblyInfoInputs.cache
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.AssemblyInfo.cs
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorTargetAssemblyInfo.cache
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.csproj.CopyComplete
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.pdb
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
@@ -70,10 +26,91 @@ C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\Ba
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\staticwebassets\AuthServer.StaticWebAssets.Manifest.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\staticwebassets\AuthServer.StaticWebAssets.xml
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorAssemblyInfo.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorAssemblyInfo.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.TagHelpers.input.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.TagHelpers.output.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorCoreGenerate.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Account\LoggedOut.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Account\Logout.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Consent\Index.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Device\Success.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Device\UserCodeCapture.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Device\UserCodeConfirmation.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Diagnostics\Index.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Grants\Index.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Redirect.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Nav.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ScopeListItem.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationSummary.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorTargetAssemblyInfo.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.RazorTargetAssemblyInfo.cs
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.csproj.CopyComplete
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.deps.json
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.runtimeconfig.json
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.pdb
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.Views.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AuthServer.Views.pdb
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.Views.pdb
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.pdb
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
@@ -86,7 +123,4 @@ C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\Ba
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AutoMapper.dll
-C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Usuario\Desktop\TFG_Prefabricados\TFG_Prefabricados\PrefabricadosTFG\BackEnd\AuthServer\obj\Debug\netcoreapp3.1\AuthServer.MvcApplicationPartsAssemblyInfo.cache
