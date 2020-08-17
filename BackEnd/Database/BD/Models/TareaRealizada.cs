@@ -13,6 +13,8 @@ namespace Database.BD.Models
         public DateTime FechaRealizacion { get; set; }
         public int HorasDedicadas { get; set; }
 
+        public int ParesRealizados { get; set; }
+
         #region RELACIONES        
         public int IdPedido { get; set; }
         public Pedido Pedido { get; set; }
