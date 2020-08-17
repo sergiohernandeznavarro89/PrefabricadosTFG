@@ -9,7 +9,8 @@ namespace Database.BD.Models
     public class Nomina
     {
         [Key]
-        public int IdNomina { get; set; }     
+        public int IdNomina { get; set; }   
+        public float Importe { get; set; }
 
         #region RELACIONES                
         public int IdEmpleado { get; set; }
