@@ -13,8 +13,8 @@ namespace Service.DTO
         public int Precio { get; set; }
 
         #region RELACIONES        
-        public ICollection<EscandalloDTO> Escandallos { get; set; }        
-        public ICollection<PedidoDTO> Pedidos { get; set; }
+        //public ICollection<EscandalloDTO> Escandallos { get; set; }        
+        //public ICollection<PedidoDTO> Pedidos { get; set; }
         #endregion
     }
 }

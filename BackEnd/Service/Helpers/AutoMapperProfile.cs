@@ -32,6 +32,7 @@ namespace Service.Helpers
             CreateMap<MaterialPiso, MaterialPisoDTO>();
             CreateMap<MaterialTapa, MaterialTapaDTO>();
             CreateMap<Trabajo, TrabajoDTO>();
+            CreateMap<TrabajoDTO, Trabajo>();
             CreateMap<Serie, SerieDTO>();
             CreateMap<EscandalloPedido, EscandalloPedidoDTO>();
             CreateMap<LineaSerieEscandallo, LineaSerieEscandalloDTO>();
