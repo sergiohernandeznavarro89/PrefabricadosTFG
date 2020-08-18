@@ -10,6 +10,8 @@ namespace Service.Helpers
         {
             //origen Cliente destino ClienteDTO            
             CreateMap<Cliente, ClienteDTO>();
+            CreateMap<Empleado, EmpleadoDTO>();
+            CreateMap<EmpleadoDTO, Empleado>();
             CreateMap<Horma, HormaDTO>();
             CreateMap<TroquelTapa, TroquelTapaDTO>();
             CreateMap<Escandallo, EscandalloDTO>();
