@@ -92,7 +92,7 @@
                   </v-card-title>
                    <!-- tabla -->
                   <v-data-table :headers="headers" :items="rows" :search="search" @click:row="rowClick">
-                    <template v-slot:item.opciones="{}">
+                    <template v-slot:[`item.actions`]="{}">
                       <v-btn icon color="primary">
                         <v-icon>mdi-pencil</v-icon>
                       </v-btn> 

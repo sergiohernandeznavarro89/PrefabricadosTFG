@@ -18,11 +18,11 @@
             </v-card-title>
             <!-- tabla -->
             <v-data-table :headers="headers" :items="rows" :search="search" @click:row="rowClick">
-              <template v-slot:item.opciones="{}">
-                <v-btn icon color="primary">
+              <template v-slot:[`item.opciones`]="row">
+                <v-btn icon color="primary" @click="edit($event, row.item)">
                   <v-icon>mdi-table-edit</v-icon>
                 </v-btn> 
-                <v-btn icon color="primary">
+                <v-btn icon color="primary" @click="remove($event, row.item)">
                   <v-icon>mdi-delete</v-icon>
                 </v-btn>                        
               </template>
@@ -64,6 +64,7 @@
 
 <script>
 import addEditEmpleado from '@/components/Nominas/Empleados/AddEditEmpleado.vue';
+import axios from "axios";
 
 export default {
     name: 'Empleado',    
@@ -95,126 +96,72 @@ export default {
 
         search: '',
         headers: [
-          { text: 'Codigo', value: 'codigo' },
+          { text: 'Codigo', value: 'idEmpleado' },
           { text: 'Nombre', value: 'nombre' },
           { text: 'Apellidos', value: 'apellidos' },
-          { text: 'DNI', value: 'dni' },
+          { text: 'DNI', value: 'nif' },
           { text: 'Email', value: 'email' },
           { text: 'Poblacion', value: 'poblacion' },
           { text: 'Provincia', value: 'provincia' },
           { text: 'Cod. Postal', value: 'codPostal' },
           { text: 'Dirección', value: 'direccion' },
           { text: 'Teléfono', value: 'telefono' },
+          { text: 'IBAN', value: 'iban' },
           { text: 'opciones', value: 'opciones' },
 
         ],
         
-        rows: [
-          {
-            codigo: 1,
-            nombre: 'Sergio',
-            apellidos: 'Hernández Navarro',
-            dni: '15422259T',
-            email: 'sergiohn89@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Cristobal amoros Nº:36 2º IZQ',
-            telefono: '609104724',
-          },
-          {
-            codigo: 2,
-            nombre: 'Javier',
-            apellidos: 'Hernández Navarro',
-            dni: '15422258E',
-            email: 'javierhn@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Cristobal amoros Nº:36 2º IZQ',
-            telefono: '660519191',
-          },
-          {
-            codigo: 3,
-            nombre: 'Itziar',
-            apellidos: 'Garcia Yates',
-            dni: '56878634R',
-            email: 'itziyates@gmail.com',
-            poblacion: 'Monforte del cid',
-            provincia: 'Alicante',
-            codPostal: '03435',
-            direccion: 'C/: Doctor Fléming Nº 7',
-            telefono: '653986715',
-          },
-          {
-            codigo: 4,
-            nombre: 'Natalia',
-            apellidos: 'Lara Ortega',
-            dni: '15427496S',
-            email: 'natalialaraortega@gmail.com',
-            poblacion: 'Biar',
-            provincia: 'Alicante',
-            codPostal: '03410',
-            direccion: 'Partida la yoma de más',
-            telefono: '679504173',
-          },
-          {
-            codigo: 5,
-            nombre: 'Joaquina',
-            apellidos: 'Navarro Espinosa',
-            dni: '15663743T',
-            email: 'joaquina.ne@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Cristobal amoros Nº:36 2º IZQ',
-            telefono: '659504105',
-          },
-          {
-            codigo: 6,
-            nombre: 'Indalecio',
-            apellidos: 'Hernández Más',
-            dni: '74211474L',
-            email: 'in.pre.an@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Poligono industrial El Rubial C:6 Pla:84',
-            telefono: '659504105',
-          },    
-          {
-            codigo: 7,
-            nombre: 'Zuriñe',
-            apellidos: 'Corbí García',
-            dni: '65932547Z',
-            email: 'zuricorviyates@gmail.com',
-            poblacion: 'Monforte del Cid',
-            provincia: 'Alicante',
-            codPostal: '03670',
-            direccion: 'Calle doctór fleming Nº 7',
-            telefono: '615734042',
-          },          
-        ],
+        rows: [ ],
       };
     }, 
 
+    created () {       
+      this.loadItems();
+    },
+    
     methods: {
-      rowClick (row){
+      remove(event, row ){
+        if(event){
+          event.stopPropagation();          
+        }
+        axios.delete('https://localhost:44379/api/Empleados/' + row.idEmpleado)
+          .then(response => {
+            this.loadItems();
+                this.textToastr = "Empleado borrado satisfactoriamente" 
+                this.showToastr = true;                
+          });
+      },
+
+      edit (event, row){
+        if(event){
+          event.stopPropagation();          
+        }
         this.showModal = true;
         this.isEditMode = true;
         
-        this.model.codigo = row.codigo;
+         this.model.codigo = row.idEmpleado;
         this.model.nombre = row.nombre;
         this.model.apellidos = row.apellidos;
-        this.model.nif = row.dni;
+        this.model.nif = row.nif;
         this.model.email = row.email;
         this.model.poblacion = row.poblacion;
         this.model.provincia = row.provincia;
         this.model.codPostal = row.codPostal;
         this.model.direccion = row.direccion;
         this.model.telefono = row.telefono;
-        this.model.iban = "ES80123451238761239861230987";
-        debugger;
+        this.model.iban = row.iban;
+      },
+
+      loadItems (){
+        axios.get('https://localhost:44379/api/Empleados')
+          .then(response => {
+            if(response.data)
+              this.rows = response.data;
+          });
+      },
+
+      rowClick (row){
+        this.edit(null, row);
       },
 
       anyadirEmpleado (){
@@ -240,43 +187,41 @@ export default {
         this.resetModel();
       },
 
-      guardarButtonClick (){
-        debugger;
-        
-        if(!this.isEditMode){
-          this.rows.push(
-            {            
-              codigo: this.rows.length + 1,
-              nombre: this.model.nombre,
-              apellidos: this.model.apellidos,
-              dni: this.model.nif,
-              email: this.model.email,
-              poblacion: this.model.poblacion,
-              provincia: this.model.provincia,
-              codPostal: this.model.codPostal,
-              direccion: this.model.direccion,
-              telefono: this.model.telefono
-            }          
-          );
-          this.textToastr = "Empleado creado satisfactoriamente" 
+      guardarButtonClick (){        
+        let datosEnviar = {
+            nombre: this.model.nombre,
+            apellidos: this.model.apellidos,
+            nif: this.model.nif,
+            email: this.model.email,
+            poblacion: this.model.poblacion,
+            provincia: this.model.provincia,
+            codPostal: this.model.codPostal,
+            direccion: this.model.direccion,
+            telefono: parseInt(this.model.telefono),
+            iban: parseInt(this.model.iban)
+          }      
+
+        if(!this.isEditMode){          
+          axios.post('https://localhost:44379/api/Empleados', datosEnviar)
+          .then(response => {
+            if(response.data)
+              this.loadItems();
+                this.textToastr = "Empleado creado satisfactoriamente" 
+                this.showToastr = true;
+                this.showModal = false;       
+          });                   
         }
         else{
-          debugger;
-          this.rows[this.model.codigo - 1].codigo = this.model.codigo;
-          this.rows[this.model.codigo - 1].nombre = this.model.nombre;
-          this.rows[this.model.codigo - 1].apellidos = this.model.apellidos;
-          this.rows[this.model.codigo - 1].nif = this.model.nif;
-          this.rows[this.model.codigo - 1].email = this.model.email;
-          this.rows[this.model.codigo - 1].poblacion = this.model.poblacion;
-          this.rows[this.model.codigo - 1].provincia = this.model.provincia;
-          this.rows[this.model.codigo - 1].codPostal = this.model.codPostal;
-          this.rows[this.model.codigo - 1].direccion = this.model.direccion;
-          this.rows[this.model.codigo - 1].telefono = this.model.telefono;                   
-          
-          this.textToastr = "Empleado modificado satisfactoriamente";
-        }
-        this.showModal = false; 
-        this.showToastr = true;                
+          datosEnviar.idEmpleado = this.model.codigo;
+          axios.put('https://localhost:44379/api/Empleados', datosEnviar)
+          .then(response => {
+            if(response.data)
+              this.loadItems();
+              this.textToastr = "Empleado modificado satisfactoriamente";
+              this.showToastr = true; 
+              this.showModal = false;      
+          });                                                     
+        }                
       }
     }       
   };
