@@ -47,6 +47,8 @@ namespace Api
                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
            });
 
+            services.AddCors();
+
             //Registramos AutoMapper
 
             // Auto Mapper Configurations
@@ -106,6 +108,7 @@ namespace Api
                 app.UseHsts();
             }
 
+            app.UseCors(options => options.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader());
             app.UseStaticFiles();
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
