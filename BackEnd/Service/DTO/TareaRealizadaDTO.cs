@@ -1,18 +1,18 @@
-﻿using System;
+﻿using Database.BD.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Database.BD.Models
+namespace Service.DTO
 {
-    public class TareaRealizada
+    public class TareaRealizadaDTO
     {
         [Key]
         public int IdTareaRealizada { get; set; }
         public DateTime FechaRealizacion { get; set; }
         public int HorasDedicadas { get; set; }
-
         public int ParesRealizados { get; set; }
 
         #region RELACIONES        

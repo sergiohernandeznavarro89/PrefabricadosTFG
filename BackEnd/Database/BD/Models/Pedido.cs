@@ -14,66 +14,67 @@ namespace Database.BD.Models
         public DateTime FechaServicio { get; set; }
         public string CodigoPedidoCliente { get; set; }
         public int PrecioTotal { get; set; }
+        public int TotalPares { get; set; }
 
 
         #region RELACIONES
         [ForeignKey("IdCliente")]
-        public int IdCliente { get; set; }
+        public int? IdCliente { get; set; }
         public Cliente Cliente { get; set; }
         //--------------------
         [ForeignKey("IdFormaPago")]
-        public int IdFormaPago { get; set; }
+        public int? IdFormaPago { get; set; }
         public FormaPago FormaPago { get; set; }        
         //-------------
         [ForeignKey("IdMaterialPiso")]
-        public int IdMaterialPiso { get; set; }
+        public int? IdMaterialPiso { get; set; }
         public MaterialPiso MaterialPiso { get; set; }
         //-------------
         [ForeignKey("IdAlturaPiso")]
-        public int IdAlturaPiso { get; set; }
+        public int? IdAlturaPiso { get; set; }
         public AlturaPiso AlturaPiso { get; set; }
         //-------------
         [ForeignKey("IdColorPiso")]
-        public int IdColorPiso { get; set; }
+        public int? IdColorPiso { get; set; }
         public ColorPiso ColorPiso { get; set; }
         //-------------
         [ForeignKey("IdMaterialTapa")]
-        public int IdMaterialTapa { get; set; }
+        public int? IdMaterialTapa { get; set; }
         public MaterialTapa MaterialTapa { get; set; }
         //-------------
         [ForeignKey("IdAlturaTapa")]
-        public int IdAlturaTapa { get; set; }
+        public int? IdAlturaTapa { get; set; }
         public AlturaTapa AlturaTapa { get; set; }
         //-------------
         [ForeignKey("IdColorTapa")]
-        public int IdColorTapa { get; set; }
+        public int? IdColorTapa { get; set; }
         public ColorTapa ColorTapa { get; set; }
         //-------------
         [ForeignKey("IdMaterialCerco")]
-        public int IdMaterialCerco { get; set; }
+        public int? IdMaterialCerco { get; set; }
         public MaterialCerco MaterialCerco { get; set; }
         //-----------
         [ForeignKey("IdColorCerco")]
-        public int IdColorCerco { get; set; }
+        public int? IdColorCerco { get; set; }
         public ColorCerco ColorCerco { get; set; }
         //-------------
         [ForeignKey("IdHorma")]
-        public int IdHorma { get; set; }
+        public int? IdHorma { get; set; }
         public Horma Horma { get; set; }
         //-------------
         [ForeignKey("IdTroquelPiso")]
-        public int IdTroquelPiso { get; set; }
+        public int? IdTroquelPiso { get; set; }
         public TroquelPiso TroquelPiso { get; set; }
         //-------------
-        public int IdTroquelTapa { get; set; }
+        public int? IdTroquelTapa { get; set; }
         public TroquelTapa TroquelTapa { get; set; }
         //-------------
         [ForeignKey("IdColorTintado")]
-        public int IdColorTintado { get; set; }
+        public int? IdColorTintado { get; set; }
         public ColorTintado ColorTintado { get; set; }
         //-------------
         [ForeignKey("IdSerie")]
-        public int IdSerie { get; set; }
+        public int? IdSerie { get; set; }
         public Serie Serie { get; set; }
         //-------------                    
         public Albaran Albaran { get; set; }
