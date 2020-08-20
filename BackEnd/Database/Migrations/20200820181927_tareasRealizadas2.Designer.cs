@@ -4,14 +4,16 @@ using Database.BD.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Database.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20200820181927_tareasRealizadas2")]
+    partial class tareasRealizadas2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -891,49 +893,49 @@ namespace Database.Migrations
                     b.Property<int?>("HormaIdHorma")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdAlturaPiso")
+                    b.Property<int>("IdAlturaPiso")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdAlturaTapa")
+                    b.Property<int>("IdAlturaTapa")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdCliente")
+                    b.Property<int>("IdCliente")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdColorCerco")
+                    b.Property<int>("IdColorCerco")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdColorPiso")
+                    b.Property<int>("IdColorPiso")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdColorTapa")
+                    b.Property<int>("IdColorTapa")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdColorTintado")
+                    b.Property<int>("IdColorTintado")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdFormaPago")
+                    b.Property<int>("IdFormaPago")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdHorma")
+                    b.Property<int>("IdHorma")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdMaterialCerco")
+                    b.Property<int>("IdMaterialCerco")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdMaterialPiso")
+                    b.Property<int>("IdMaterialPiso")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdMaterialTapa")
+                    b.Property<int>("IdMaterialTapa")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdSerie")
+                    b.Property<int>("IdSerie")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdTroquelPiso")
+                    b.Property<int>("IdTroquelPiso")
                         .HasColumnType("int");
 
-                    b.Property<int?>("IdTroquelTapa")
+                    b.Property<int>("IdTroquelTapa")
                         .HasColumnType("int");
 
                     b.Property<string>("MaterialCercoIdMaterialCerco")
@@ -949,9 +951,6 @@ namespace Database.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("SerieIdSerie")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TotalPares")
                         .HasColumnType("int");
 
                     b.Property<int?>("TroquelPisoIdTroquelPiso")

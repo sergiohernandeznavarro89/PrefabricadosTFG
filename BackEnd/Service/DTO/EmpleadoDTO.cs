@@ -16,6 +16,9 @@ namespace Service.DTO
         public string CodPostal { get; set; }
         public string Direccion { get; set; }
         public int Telefono { get; set; }
-        public int IBAN { get; set; }       
+        public int IBAN { get; set; }
+
+        public ICollection<Nomina> Nominas { get; set; }
+        public ICollection<TareaRealizada> TareasRealizadas { get; set; }
     }
 }
