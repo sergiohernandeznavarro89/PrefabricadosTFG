@@ -17,6 +17,7 @@ namespace Service.DTO
 
         #region RELACIONES        
         public int? IdPedido { get; set; }
+        public int? PedidoIdPedido { get; set; }
         public Pedido Pedido { get; set; }
         //-------------------------------
         public int IdEmpleado { get; set; }
