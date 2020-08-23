@@ -58,17 +58,14 @@ namespace Service.Service
             {
                 _context.Update(tareaRealizada);
 
-                //tareaRealizada.Nif = tareaRealizadaDto.Nif;
-                //tareaRealizada.IBAN = tareaRealizadaDto.IBAN;
-                //tareaRealizada.Nombre = tareaRealizadaDto.Nombre;
-                //tareaRealizada.Poblacion = tareaRealizadaDto.Poblacion;
-                //tareaRealizada.Provincia = tareaRealizadaDto.Provincia;
-                //tareaRealizada.Telefono = tareaRealizadaDto.Telefono;
-                //tareaRealizada.Apellidos = tareaRealizadaDto.Apellidos;
-                //tareaRealizada.CodPostal = tareaRealizadaDto.CodPostal;
-                //tareaRealizada.Direccion = tareaRealizadaDto.Direccion;
-                //tareaRealizada.Email = tareaRealizadaDto.Email;                
-              
+                tareaRealizada.FechaRealizacion = tareaRealizadaDto.FechaRealizacion;
+                tareaRealizada.HorasDedicadas = tareaRealizadaDto.HorasDedicadas;
+                tareaRealizada.IdPedido = tareaRealizadaDto.IdPedido;
+                tareaRealizada.IdEmpleado = tareaRealizadaDto.IdEmpleado;
+                tareaRealizada.IdTrabajo = tareaRealizadaDto.IdTrabajo;
+                tareaRealizada.IdNomina = tareaRealizadaDto.IdNomina;
+                tareaRealizada.ParesRealizados = tareaRealizadaDto.ParesRealizados;
+
                 _context.SaveChanges();
             }
                             
