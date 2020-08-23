@@ -7,7 +7,7 @@
           <div class="col-sm-12">
             <v-card-title>
               <!-- botón añadir nómina -->
-              <v-btn tile outlined color="primary" @click="anyadirEmpleado">
+              <v-btn tile outlined color="primary" @click="crearNominaClick">
                 <v-icon left>mdi-plus</v-icon> Crear Nómina
               </v-btn>   
               <!-- -----------------------  -->
@@ -17,14 +17,11 @@
               <!-- -------------- -->
             </v-card-title>
             <!-- tabla -->
-            <v-data-table :headers="headers" :items="rows" :search="search" @click:row="rowClick">
-              <template v-slot:[`item.actions`]="{}">
-                <v-btn icon color="primary">
-                  <v-icon>mdi-table-edit</v-icon>
-                </v-btn> 
-                <v-btn icon color="primary">
-                  <v-icon>mdi-delete</v-icon>
-                </v-btn>                        
+            <v-data-table :headers="headers" :items="rowsNominas" :search="search" @click:row="rowNominasClick">
+              <template v-slot:[`item.opciones`]= "row">
+                <v-btn icon color="primary" @click="ver($event, row)">
+                  <v-icon>mdi-eye</v-icon>
+                </v-btn>                    
               </template>
             </v-data-table>
             <!-- ----------------- -->
@@ -47,12 +44,51 @@
             <span class="headline">Nómina</span>
           </v-card-title>
           <v-card-text>
-            <addEditEmpleado v-model="model" :isEditMode="isEditMode"></addEditEmpleado>
+            <v-alert text color="info" class="col-sm-6 offset-3">
+              <div v-show=!isEditMode>
+                <p class="font-weight-bold text-center"> Indica el trabajador para el que deseas generar nómina para agosto de 2020 </p>  
+                <div class="col-sm-12">            
+                  <v-select :items="empleados" item-text="text" item-value="value" v-model="model.empleadoSeleccionado" label="Seleccionar Empleado" @change="changeEmpleado" dense></v-select>
+                </div>  
+                <p v-show="model.empleadoSeleccionado" class="font-weight-bold text-center">IMPORTE: {{ model.importe }} €</p>
+              </div>       
+              <div v-show=isEditMode>
+                <p class="font-weight-bold text-center"> Nómina: 1, Empleado: Sergio Hernández Navarro, desde: 01/01/2020 hasta: 31/01/2020 </p>  
+                <p class="font-weight-bold text-center">IMPORTE: {{ model.importe }} €</p>                
+              </div>              
+            </v-alert>
+            
+            <!-- TARJETA -->
+            <div v-show="model.empleadoSeleccionado" class="row">                   
+              <div class="col-sm-4" v-for="tarea in tareasAgregadas" :key="tarea.value">
+                <v-expansion-panels class="mb-6">
+                  <v-expansion-panel>
+                    <v-expansion-panel-header class="primary--text" expand-icon="mdi-menu-down">
+                      <h3>{{ tarea.nombre }}</h3>
+                    </v-expansion-panel-header>
+                    <v-expansion-panel-content>
+                      <v-card-title>              
+                        <!-- buscador tabla -->
+                        <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" single-line hide-details></v-text-field>
+                        <!-- -------------- -->
+                        <v-spacer></v-spacer>                                                                     
+                      </v-card-title>
+                      <!-- tabla -->
+                      <v-data-table :headers="headersNominaIndividual" :items="tarea.tareasRealizadas" :search="search">                        
+                      </v-data-table>
+                      <!-- ------------ -->
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-expansion-panels>
+              </div>                     
+            </div>
+            <!-- ----------------------- -->
+
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn color="red darken-1" text @click="cancelarButtonClick">Cancelar</v-btn>
-            <v-btn color="success darken-1" text @click="guardarButtonClick">Guardar</v-btn>
+            <v-btn v-show="!isEditMode" color="success darken-1" text @click="guardarButtonClick">Crear Nómina</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -72,6 +108,8 @@ export default {
     },         
     data() {
       return {   
+        tareasAgregadas: [ ],
+
         toastrTimeOut: 6000, 
         textToastr: null,
         showToastr: false,
@@ -79,207 +117,125 @@ export default {
         showModal: false,
         isEditMode: false,
 
+        empleados: [ ],
+
         model: {
-          codigo: null,
-          nombre: null,
-          apellidos: null,
-          nif: null,
-          email: null,
-          poblacion: null,
-          provincia: null,          
-          codPostal: null,
-          direccion: null,
-          telefono: null,
-          iban: null
+          importe: null,
+          empleadoSeleccionado: null
         },        
 
         search: '',
+        headersNominaIndividual: [
+          { text: 'Pedido', value: 'idPedido' },
+          { text: 'Pares', value: 'paresRealizados' },
+        ],
+
         headers: [
           { text: 'Codigo', value: 'codigo' },
-          { text: 'Nombre', value: 'nombre' },
-          { text: 'Apellidos', value: 'apellidos' },
-          { text: 'DNI', value: 'dni' },
-          { text: 'Email', value: 'email' },
-          { text: 'Poblacion', value: 'poblacion' },
-          { text: 'Provincia', value: 'provincia' },
-          { text: 'Cod. Postal', value: 'codPostal' },
-          { text: 'Dirección', value: 'direccion' },
-          { text: 'Teléfono', value: 'telefono' },
-          { text: 'opciones', value: 'opciones' },
-
+          { text: 'Empleado', value: 'empleado' },
+          { text: 'Fecha Inicio', value: 'fechaInicio' },
+          { text: 'Fecha Fin', value: 'fechaFin' },
+          { text: 'Importe', value: 'importe' },
+          { text: 'Opciones', value: 'opciones' },
         ],
         
-        rows: [
-          {
-            codigo: 1,
-            nombre: 'Sergio',
-            apellidos: 'Hernández Navarro',
-            dni: '15422259T',
-            email: 'sergiohn89@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Cristobal amoros Nº:36 2º IZQ',
-            telefono: '609104724',
-          },
-          {
-            codigo: 2,
-            nombre: 'Javier',
-            apellidos: 'Hernández Navarro',
-            dni: '15422258E',
-            email: 'javierhn@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Cristobal amoros Nº:36 2º IZQ',
-            telefono: '660519191',
-          },
-          {
-            codigo: 3,
-            nombre: 'Itziar',
-            apellidos: 'Garcia Yates',
-            dni: '56878634R',
-            email: 'itziyates@gmail.com',
-            poblacion: 'Monforte del cid',
-            provincia: 'Alicante',
-            codPostal: '03435',
-            direccion: 'C/: Doctor Fléming Nº 7',
-            telefono: '653986715',
-          },
-          {
-            codigo: 4,
-            nombre: 'Natalia',
-            apellidos: 'Lara Ortega',
-            dni: '15427496S',
-            email: 'natalialaraortega@gmail.com',
-            poblacion: 'Biar',
-            provincia: 'Alicante',
-            codPostal: '03410',
-            direccion: 'Partida la yoma de más',
-            telefono: '679504173',
-          },
-          {
-            codigo: 5,
-            nombre: 'Joaquina',
-            apellidos: 'Navarro Espinosa',
-            dni: '15663743T',
-            email: 'joaquina.ne@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Cristobal amoros Nº:36 2º IZQ',
-            telefono: '659504105',
-          },
-          {
-            codigo: 6,
-            nombre: 'Indalecio',
-            apellidos: 'Hernández Más',
-            dni: '74211474L',
-            email: 'in.pre.an@gmail.com',
-            poblacion: 'Villena',
-            provincia: 'Alicante',
-            codPostal: '03400',
-            direccion: 'Poligono industrial El Rubial C:6 Pla:84',
-            telefono: '659504105',
-          },    
-          {
-            codigo: 7,
-            nombre: 'Zuriñe',
-            apellidos: 'Corbí García',
-            dni: '65932547Z',
-            email: 'zuricorviyates@gmail.com',
-            poblacion: 'Monforte del Cid',
-            provincia: 'Alicante',
-            codPostal: '03670',
-            direccion: 'Calle doctór fleming Nº 7',
-            telefono: '615734042',
-          },          
-        ],
+        rowsNominas: [ ],
       };
     }, 
 
     methods: {
-      rowClick (row){
+      loadEmpleados(){
+        axios.get('https://localhost:44379/api/Empleados')
+          .then(response => {
+            if(response.data){
+              this.empleados = response.data.map(e => {
+                return { value: e.idEmpleado, text: e.nombre + " " + e.apellidos };
+              });
+            }
+          });
+      },
+
+      loadNominas(){
+        axios.get('https://localhost:44379/api/Nominas')
+          .then(response => {
+            if(response.data){
+              this.rowsNominas = response.data;
+            }
+          });
+      },
+
+      changeEmpleado (){
+        axios.get('https://localhost:44379/api/TrabajosRealizados?empleadoId=' + this.model.empleadoSeleccionado)
+          .then(response => {
+            if(response.data){
+              this.tareasAgregadas = response.data;
+
+              let importeTotal = 0;
+              response.data.forEach(item => {
+                let precio = item.precio;                                
+                item.trabajosRealizados.forEach(trabajo => {
+                  importeTotal = importeTotal + (trabajo.pares * precio);
+                })
+              })
+              this.model.importe = importeTotal;
+            }
+          });
+      },
+
+      rowNominasClick (row){
+        this.ver(null, {item: row});
+      },
+
+      ver (event, row){
+        if(event){
+          event.stopPropagation();          
+        }
         this.showModal = true;
         this.isEditMode = true;
         
-        this.model.codigo = row.codigo;
-        this.model.nombre = row.nombre;
-        this.model.apellidos = row.apellidos;
-        this.model.nif = row.dni;
-        this.model.email = row.email;
-        this.model.poblacion = row.poblacion;
-        this.model.provincia = row.provincia;
-        this.model.codPostal = row.codPostal;
-        this.model.direccion = row.direccion;
-        this.model.telefono = row.telefono;
-        this.model.iban = "ES80123451238761239861230987";
+        axios.get('https://localhost:44379/api/Nominas/' + row.NominaId)
+          .then(response => {
+            if(response.data){
+              this.tareasAgregadas = response.data.tareas;              
+              this.model.importe = response.data.importe;
+            }
+          });
+      },      
+
+      crearNominaClick (){
         debugger;
-      },
 
-      anyadirEmpleado (){
-        this.isEditMode = false;
         this.showModal = true;
-      },
-
-      resetModel (){
-        this.model.nombre = null;
-        this.model.apellidos = null;
-        this.model.nif = null;
-        this.model.email = null;
-        this.model.poblacion = null;
-        this.model.provincia = null;
-        this.model.codPostal = null;
-        this.model.direccion = null;
-        this.model.telefono = null;
-        this.model.iban = null;
-      },
+        this.isEditMode = false;                
+      },     
 
       cancelarButtonClick (){   
         this.showModal = false;
-        this.resetModel();
       },
 
-      guardarButtonClick (){
-        debugger;
-        
-        if(!this.isEditMode){
-          this.rows.push(
-            {            
-              codigo: this.rows.length + 1,
-              nombre: this.model.nombre,
-              apellidos: this.model.apellidos,
-              dni: this.model.nif,
-              email: this.model.email,
-              poblacion: this.model.poblacion,
-              provincia: this.model.provincia,
-              codPostal: this.model.codPostal,
-              direccion: this.model.direccion,
-              telefono: this.model.telefono
-            }          
-          );
-          this.textToastr = "Empleado creado satisfactoriamente" 
-        }
-        else{
-          debugger;
-          this.rows[this.model.codigo - 1].codigo = this.model.codigo;
-          this.rows[this.model.codigo - 1].nombre = this.model.nombre;
-          this.rows[this.model.codigo - 1].apellidos = this.model.apellidos;
-          this.rows[this.model.codigo - 1].nif = this.model.nif;
-          this.rows[this.model.codigo - 1].email = this.model.email;
-          this.rows[this.model.codigo - 1].poblacion = this.model.poblacion;
-          this.rows[this.model.codigo - 1].provincia = this.model.provincia;
-          this.rows[this.model.codigo - 1].codPostal = this.model.codPostal;
-          this.rows[this.model.codigo - 1].direccion = this.model.direccion;
-          this.rows[this.model.codigo - 1].telefono = this.model.telefono;                   
-          
-          this.textToastr = "Empleado modificado satisfactoriamente";
-        }
-        this.showModal = false; 
-        this.showToastr = true;                
-      }
-    }       
-  };
+      guardarButtonClick (){       
+        this.model.trabajosRealizados.forEach(item => {
+          let datosEnviar = {
+            trabajoRealizado: item,
+            empleadoId: this.model.empleadoSeleccionado,
+            importe: this.model.importe,
+            fechaInicio: "01-" + date.getMonth() + date.getYear(),
+            fechaFin: "30-" + date.getMonth() + date.getYear(),
+          };
+
+          axios.post('https://localhost:44379/api/Nominas', datosEnviar)
+            .then(response => {
+              if(response.data){
+                this.textToastr = "Nómina generada satisfactoriamente"         
+                this.showModal = false;
+                this.showToastr = true;
+                this.loadNominas();                              
+              }            
+            });           
+        });           
+      }        
+    }
+};
 </script>
 
 
