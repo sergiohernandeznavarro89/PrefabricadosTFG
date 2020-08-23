@@ -17,6 +17,9 @@ namespace Service.Helpers
             CreateMap<TareaRealizada, TareaRealizadaDTO>();
             CreateMap<TareaRealizadaDTO, TareaRealizada>();
 
+            CreateMap<Nomina, NominaDTO>();
+            CreateMap<NominaDTO, Nomina>();
+
             CreateMap<Horma, HormaDTO>();
             CreateMap<TroquelTapa, TroquelTapaDTO>();
             CreateMap<Escandallo, EscandalloDTO>();
